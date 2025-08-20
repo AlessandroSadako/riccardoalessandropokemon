@@ -21,7 +21,7 @@
 
 
             <div class="content-content">
-                <h1 class=" text-center my-5">{{ Auth::user()->name }}</h1>
+                <h1 class=" text-center my-5 py-5">{{ Auth::user()->name }}</h1>
             </div>
 
         </main>
