@@ -10,10 +10,19 @@
         </div>
     </div>
     <script>
-        const text =
-            `Salve allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
-            Registrati per scoprire come fare!
-            `;
+        // const text =
+        //     `Salve allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
+    //     Registrati per scoprire come fare!
+    //     `;
+        @auth
+        const text = `Bentornato, {{ Auth::user()->name }}!
+        Presto, scegli il tuo team personalizzato e aiutami a sconfiggere Giratina!
+        `;
+        @else
+            const text = `Salve allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
+                        Registrati per scoprire come fare!
+                    `;
+        @endauth
         const box = document.getElementById("text-box");
 
         let i = 0;
