@@ -4,11 +4,15 @@
 
         </div>
     </div>
-    <div class=" content">
-        <div class="content-content">
-            <h1 class=" text-center">Alessandro pederiva Gay</h1>
+    @auth
+
+        <div class=" content">
+            <div class="content-content">
+                <h1 class=" text-center">{{ Auth::user()->name }}</h1>
+            </div>
         </div>
-    </div>
+
+    @endauth
     <script>
         // const text =
         //     `Salve allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
