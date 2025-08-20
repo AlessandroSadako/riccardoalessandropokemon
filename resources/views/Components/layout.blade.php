@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     {{-- VITE --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- FONTAWESOME --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     {{-- STYLE --}}
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="logs.css">
@@ -24,7 +26,7 @@
     {{ $slot }}
     {{-- </div> --}}
 
-    {{-- <x-footer/> --}}
+    {{-- <x-footer /> --}}
 </body>
 
 </html>

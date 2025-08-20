@@ -5,14 +5,43 @@
         </div>
     </div>
     @auth
-
-        <div class=" content">
-            <div class="content-content">
-                <h1 class=" text-center">{{ Auth::user()->name }}</h1>
+        <main>
+            <div class="arrows">
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
-        </div>
+
+
+            <div class="content-content">
+                <h1 class=" text-center my-5">{{ Auth::user()->name }}</h1>
+            </div>
+
+        </main>
 
     @endauth
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
         // const text =
         //     `Salve allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
