@@ -23,8 +23,8 @@
         Presto, scegli il tuo team personalizzato e aiutami a sconfiggere Giratina!
         `;
         @else
-            const text = `Salve allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
-                        Registrati per scoprire come fare!
+            const text = `Presto allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
+                        Registrati e costruisci la squadra piu forte possibile!
                     `;
         @endauth
         const box = document.getElementById("text-box");
