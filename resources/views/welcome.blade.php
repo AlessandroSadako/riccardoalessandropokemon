@@ -4,16 +4,29 @@
 
         </div>
     </div>
-    <div class=" content">
-        <div class="content-content">
-            <h1 class=" text-center">Alessandro pederiva Gay</h1>
+    @auth
+
+        <div class=" content">
+            <div class="content-content">
+                <h1 class=" text-center">{{ Auth::user()->name }}</h1>
+            </div>
         </div>
-    </div>
+
+    @endauth
     <script>
-        const text =
-            `Presto allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
-            Registrati e costruisci il miglior team possibile per sconfiggerlo!
-            `;
+        // const text =
+        //     `Salve allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
+    //     Registrati per scoprire come fare!
+    //     `;
+        @auth
+        const text = `Bentornato, {{ Auth::user()->name }}!
+        Presto, scegli il tuo team personalizzato e aiutami a sconfiggere Giratina!
+        `;
+        @else
+            const text = `Salve allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
+                        Registrati per scoprire come fare!
+                    `;
+        @endauth
         const box = document.getElementById("text-box");
 
         let i = 0;

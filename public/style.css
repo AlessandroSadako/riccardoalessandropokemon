@@ -33,7 +33,40 @@
 
 
 
-/* ------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+nav {
+    background-color: var(--azzurro) !important;
+}
+
+nav ul li a {
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.dropdown-item {
+    color: var(--nero) !important;
+}
+
+
+
+
+
+
+
+
+
 
 
 
