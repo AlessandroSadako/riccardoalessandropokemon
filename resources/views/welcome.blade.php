@@ -11,8 +11,8 @@
     </div>
     <script>
         const text =
-            `Salve allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
-            Registrati per scoprire come fare!
+            `Presto allenatore, ho bisogno del tuo aiuto per sconfiggere Giratina!
+            Registrati e costruisci il miglior team possibile per sconfiggerlo!
             `;
         const box = document.getElementById("text-box");
 
