@@ -1,7 +1,12 @@
 
 <x-layout>
+
     <div class="contaier-fluid">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center caveimg">
+            <div>
+                <img src="https://static.wikia.nocookie.net/analisi-pokemon/images/5/50/Martes.png/revision/latest?cb=20230726122138&path-prefix=it" alt="">
+            </div>
+            {{-- inizio form --}}
             <div class="w-50 my-5 pt-5">
                     @if ($errors->any())
                         <div class="alert alert-danger">
@@ -25,6 +30,10 @@
                 <button type="submit" class="btn btn-primary">Accedi</button>
                 </form>
             </div>
+            {{-- fine form --}}
         </div>
     </div>
+
+
+
 </x-layout>
