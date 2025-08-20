@@ -13,6 +13,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     {{-- STYLE --}}
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logs.css">
     <title>PokeTrainer</title>
 </head>
 
