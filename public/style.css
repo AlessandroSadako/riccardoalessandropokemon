@@ -1,0 +1,29 @@
+* {
+    overflow-x: hidden;
+}
+:root {
+    --nero: #000000;
+    --blu: #0352b1;
+    --viola: #840e8d;
+    --azzurro: #396ed9;
+}
+.header {
+    background: url('https://wallpaperaccess.com/full/6682744.gif');
+    width: 100vw;
+    height: 100vh;
+}
+.nero {
+    background-color: var(--nero) !important;
+}
+
+.blu {
+    background-color: var(--blu) !important;
+}
+
+.viola {
+    background-color: var(--viola) !important;
+}
+
+.azzurro {
+    background-color: var(--azzurro) !important;
+}
