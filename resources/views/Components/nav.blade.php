@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top py-3 fs-5">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">PokeTrainer</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -14,7 +14,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('login') }}">Login</a>
                     </li>
-                    <span class=" border-end border-dark-subtle"></span>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('register') }}">Register</a>
                     </li>
@@ -26,7 +25,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="{{route("contacts")}}">Contattaci</a></li>
+                            <li><a class="dropdown-item" href="{{ route('contacts') }}">Contattaci</a></li>
                             <li>
                                 <form action="{{ route('logout') }}" method="post" class=" border-top">
                                     @csrf
