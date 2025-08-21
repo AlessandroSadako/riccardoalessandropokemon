@@ -1,0 +1,35 @@
+
+.caveimg {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7)100%, rgba(0, 0, 0, 1)0%), url(./immagini/bencin-studios-pixelartbackground.gif);
+    width: 100vw;
+}
+.martes {
+    margin-top: 20vh;
+    padding-left: 10vw;
+    max-width: 35vw;
+    max-height: 75vh;
+}
+.formslog {
+    margin-top: 30vh;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px ridge black;
+    width: 50vw;
+    height: 35vh;
+    color: white;
+    font-family: 'Press Start 2P';
+    white-space: normal;
+}
+.formsreg {
+    margin-top: 30vh;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px ridge black;
+    width: 50vw;
+    height: 50vh;
+    color: white;
+    font-family: 'Press Start 2P';
+    white-space: normal;
+}

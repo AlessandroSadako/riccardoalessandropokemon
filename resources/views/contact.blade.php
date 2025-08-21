@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="mt-5 pt-4">
+    <div class="">
         <div class="container">
             <div class="row">
                 <form class="border-shadow" method="POST" action="{{route("submit")}}">

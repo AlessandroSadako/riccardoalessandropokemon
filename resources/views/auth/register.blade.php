@@ -1,7 +1,9 @@
 <x-layout>
-    <div class="contaier-fluid">
-        <div class="row justify-content-center">
-            <div class="w-50 my-5 pt-5">
+    <div class="caveimg min-vh-100">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+            {{-- inizio form --}}
+            <div class="col-9 formsreg">
                     @if ($errors->any())
                         <div class="alert alert-danger">
                             <ul>
@@ -31,6 +33,11 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Registrati</button>
                 </form>
+            </div>
+            {{-- fine form --}}
+                <div class="col-3 d-flex justify-center martes">
+                    <img src="./immagini/Martes.webp" alt="">
+                </div>
             </div>
         </div>
     </div>
