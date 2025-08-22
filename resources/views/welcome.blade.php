@@ -22,6 +22,38 @@
 
             <div class="content-content">
                 <h1 class=" text-center display-1">{{ Auth::user()->name }}</h1>
+
+                {{-- @foreach ($allenatori as $trainer)
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $trainer['nome'] }}</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">{{ $trainer['ruolo'] }}</h6>
+                            <ul>
+                                @foreach ($trainer['squadra'] as $team)
+                                    <li>{{ $team }}</li>
+                                @endforeach
+                            </ul>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                @endforeach --}}
+
+                <div class="d-flex gap-5">
+                    <div class="pg">
+                        <img src="{{ $allenatori[0]['img'] }}" alt="">
+                    </div>
+                    <div class="pg">
+                        <img src="{{ $allenatori[1]['img'] }}" alt="">
+                    </div>
+                    <div class="pg">
+                        <img src="{{ $allenatori[2]['img'] }}" alt="">
+                    </div>
+                    <div class="pg">
+                        <img src="{{ $allenatori[3]['img'] }}" alt="">
+                    </div>
+                </div>
+
             </div>
 
         </main>
