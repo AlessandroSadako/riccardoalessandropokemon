@@ -13,7 +13,6 @@ class PublicController extends Controller
     {
 
         $allenatori = [
-            // 'allenatori' => [
             [
                 'nome' => 'Lance',
                 'img' => 'https://pa1.aminoapps.com/6977/ebb68f0e97f552083c317af83f155a2331396ee3r1-500-597_hq.gif',
@@ -27,10 +26,10 @@ class PublicController extends Controller
                 'squadra' => ['Garchomp', 'Lucario', 'Roserade', 'Milotic', 'Spiritomb', 'Togekiss'],
             ],
             [
-                'nome' => 'Steven Stone',
-                'img' => 'https://pa1.aminoapps.com/5873/9c50462f4776b012bae1e17b161af9f7676db2d8_hq.gif',
-                'ruolo' => 'Campione',
-                'squadra' => ['Metagross', 'Aggron', 'Claydol', 'Armaldo', 'Cradily', 'Skarmory'],
+                'nome' => 'N',
+                'img' => 'https://archives.bulbagarden.net/media/upload/a/a0/Spr_BW_N.png',
+                'ruolo' => 'Personaggio Segreto',
+                'squadra' => ['Scolipede', 'Sigilyph', 'Carracosta', 'Archeops', 'Zoroark', 'Klinklang'],
             ],
             [
                 'nome' => 'Red',
@@ -39,18 +38,13 @@ class PublicController extends Controller
                 'squadra' => ['Pikachu', 'Charizard', 'Venusaur', 'Blastoise', 'Snorlax', 'Lapras'],
             ],
             [
-                'nome' => 'Alder',
-                'img' => '',
-                'ruolo' => 'Campione',
-                'squadra' => ['Volcarona', 'Bouffalant', 'Escavalier', 'Accelgor', 'Druddigon', 'Vanilluxe'],
-            ],
-            [
                 'nome' => 'Iris',
-                'img' => '',
+                'img' => 'https://media.tenor.com/Q3Iks96Pn64AAAAi/iris-pokemon.gif',
                 'ruolo' => 'Campionessa',
                 'squadra' => ['Haxorus', 'Lapras', 'Aggron', 'Druddigon', 'Archeops', 'Hydreigon'],
             ],
-            // ],
+
+
         ];
         return view("welcome", ['allenatori' => $allenatori]);
     }

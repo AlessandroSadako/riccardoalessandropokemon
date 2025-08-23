@@ -22,8 +22,9 @@
 
             <div class="content-content">
                 <h1 class=" text-center display-1">{{ Auth::user()->name }}</h1>
+            </div>
 
-                {{-- @foreach ($allenatori as $trainer)
+            {{-- @foreach ($allenatori as $trainer)
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">{{ $trainer['nome'] }}</h5>
@@ -39,7 +40,24 @@
                     </div>
                 @endforeach --}}
 
-                <div class="d-flex gap-5">
+            <div class="container d-flex justify-content-center gap-5">
+                @foreach ($allenatori as $trainer)
+                    <div class="d-flex flex-column mx-5">
+                        <h6 class="pgName title text-center p-3 rounded text-white">{{ $trainer['nome'] }}</h6>
+                        <div class="pg">
+                            <img src="{{ $trainer['img'] }}" alt="">
+                        </div>
+                    </div>
+                @endforeach
+                <div class="d-flex flex-column mx-5">
+                    <h6 class="pgName title text-center p-3 rounded text-white">Personalizza...</h6>
+                    <div class="pg d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus text-white display-1"></i>
+                    </div>
+                </div>
+            </div>
+
+            {{-- <div class="d-flex gap-5">
                     <div class="pg">
                         <img src="{{ $allenatori[0]['img'] }}" alt="">
                     </div>
@@ -52,9 +70,10 @@
                     <div class="pg">
                         <img src="{{ $allenatori[3]['img'] }}" alt="">
                     </div>
-                </div>
-
-            </div>
+                    <div class="pg">
+                        <img src="{{ $allenatori[4]['img'] }}" alt="">
+                    </div>
+                </div> --}}
 
         </main>
 
