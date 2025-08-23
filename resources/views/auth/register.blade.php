@@ -3,9 +3,9 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
             {{-- inizio form --}}
-            <div class="col-9 formsreg">
+                <div class="position-absolute">
                     @if ($errors->any())
-                        <div class="alert alert-danger">
+                        <div class="alert alert-danger allertpositionreg">
                             <ul>
                                 @foreach ($errors->all() as $error)
                                     <li>{{$error}}</li>
@@ -13,6 +13,8 @@
                             </ul>
                         </div>
                     @endif
+                </div>
+            <div class="col-8 formsreg">
                 <form method="POST" action="{{route("register")}}">
                     @csrf
                     <div class="mb-3">
@@ -35,8 +37,8 @@
                 </form>
             </div>
             {{-- fine form --}}
-                <div class="col-3 d-flex justify-center martes">
-                    <img src="./immagini/Martes.webp" alt="">
+                <div class="col-4 d-flex justify-center martes">
+                    <img src="./immagini/martesgiusta.png" alt="">
                 </div>
             </div>
         </div>

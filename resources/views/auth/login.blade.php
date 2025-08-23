@@ -2,8 +2,12 @@
     <div class="caveimg min-vh-100">
         <div class="container-fluid">
             <div class="row justify-content-center">
+                {{-- immagine --}}
+                <div class="col-4 d-flex justify-center saturn">
+                    <img src="./immagini/saturnogiusto.png" alt="">
+                </div>
                 {{-- inizio form --}}
-                <div class="col-9 formslog">
+                <div class=" position-absolute allertpositionlog">
                     @if ($errors->any())
                         <div class="alert alert-danger">
                             <ul>
@@ -13,6 +17,8 @@
                             </ul>
                         </div>
                     @endif
+                </div>
+                <div class="col-8 formslog">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="mb-3">
@@ -27,9 +33,6 @@
                     </form>
                 </div>
                 {{-- fine form --}}
-                <div class="col-3 d-flex justify-center martes">
-                    <img src="./immagini/Martes.webp" alt="">
-                </div>
             </div>
         </div>
     </div>

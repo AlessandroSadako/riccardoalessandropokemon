@@ -4,10 +4,18 @@
     width: 100vw;
 }
 .martes {
-    margin-top: 20vh;
-    padding-left: 10vw;
-    max-width: 35vw;
-    max-height: 75vh;
+    margin-top: 40vh;
+    margin-left: 5vw;
+    padding-right: 30vw;
+    width: 15vw;
+    height: 55vh;
+}
+.saturn {
+    margin-top: 30vh;
+    margin-left: 5vw;
+    padding-right: 30vw;
+    width: 15vw;
+    height: 55vh;
 }
 .formslog {
     margin-top: 30vh;
@@ -32,4 +40,20 @@
     color: white;
     font-family: 'Press Start 2P';
     white-space: normal;
+}
+.allertpositionreg {
+    position: relative;
+    left: 63vw;
+    top: 19vh;
+    max-width: 500px;
+    max-height: 200px;
+    font-family: 'Press Start 2P';
+}
+.allertpositionlog {
+    position: absolute;
+    left: 10vw;
+    top: 20vh;
+    max-width: 500px;
+    max-height: 200px;
+    font-family: 'Press Start 2P';
 }
