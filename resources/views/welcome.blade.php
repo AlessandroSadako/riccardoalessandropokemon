@@ -85,7 +85,7 @@
                         <div class="info rounded w-75 m-auto p-3  mt-5">
                             <h6 class="display-5">Team:</h6>
                             @foreach ($trainer['squadra'] as $team)
-                                <span class="d-flex align-self-start flex-row my-5 spacing fs-3">{{ $team }} |
+                                <span class=" my-5 spacing fs-3">{{ $team }} |
                                 </span>
                             @endforeach
                             <p class=" d-flex align-self-start ps-4 fs-3 spacing">Titolo: {{ $trainer['ruolo'] }}</p>
