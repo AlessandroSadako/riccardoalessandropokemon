@@ -20,8 +20,8 @@
             </div>
 
 
-            <div class="content-content">
-                <h1 class=" text-center display-1">{{ Auth::user()->name }}</h1>
+            <div class="content-content my-5">
+                <h2 class="display-1 text-center">Scegli il tuo team!</h2>
             </div>
 
             {{-- @foreach ($allenatori as $trainer)
@@ -40,7 +40,19 @@
                     </div>
                 @endforeach --}}
 
-            <div class="container d-flex justify-content-center gap-5">
+
+
+
+
+
+
+
+
+
+
+
+
+            {{-- <div class="container d-flex justify-content-center gap-5 border border-danger">
                 @foreach ($allenatori as $trainer)
                     <div class="d-flex flex-column mx-5">
                         <h6 class="pgName title text-center p-3 rounded text-white">{{ $trainer['nome'] }}</h6>
@@ -55,7 +67,45 @@
                         <i class="fa-solid fa-plus text-white display-1"></i>
                     </div>
                 </div>
+            </div> --}}
+
+
+            <div class="row justify-content-center selection">
+                @foreach ($allenatori as $trainer)
+                    <div class="col-12 col-md-4 pg resizer">
+                        <img src="{{ $trainer['img'] }}" alt="">
+                    </div>
+                    <div class="col-12 col-md-8 text-center resizer">
+                        <h2 class="display-1 title">{{ $trainer['nome'] }}</h2>
+                        {{-- <ul class="info w-75 m-auto list-unstyled fs-3">
+                            @foreach ($trainer['squadra'] as $team)
+                                <li class=" my-5">{{ $team }}</li>
+                            @endforeach
+                        </ul> --}}
+                        <div class="info rounded w-75 m-auto p-3  mt-5">
+                            <h6 class="display-5">Team:</h6>
+                            @foreach ($trainer['squadra'] as $team)
+                                <span class="d-flex align-self-start flex-row my-5 spacing fs-3">{{ $team }} |
+                                </span>
+                            @endforeach
+                            <p class=" d-flex align-self-start ps-4 fs-3 spacing">Titolo: {{ $trainer['ruolo'] }}</p>
+                        </div>
+                    </div>
+                @endforeach
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             {{-- <div class="d-flex gap-5">
                     <div class="pg">
