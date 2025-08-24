@@ -19,8 +19,9 @@
                     @endif
                 </div>
                 <div class="col-8 formslog">
-                    <form method="POST" action="{{ route('login') }}">
+                    <form action="{{ route('login') }}" method="POST">
                         @csrf
+                        @method('POST')
                         <div class="mb-3">
                             <label class="form-label">Email address</label>
                             <input name="email" type="email" class="form-control">
@@ -36,7 +37,5 @@
             </div>
         </div>
     </div>
-
-
 
 </x-layout>
