@@ -33,6 +33,13 @@
                         <label class="form-label">Conferma Password</label>
                         <input type="password" class="form-control" name="password_confirmation">
                     </div>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="gender" id="male" value="male" autocomplete="off">
+                        <label class="btn btn-primary" for="male">Male</label>
+
+                        <input type="radio" class="btn-check" name="gender" id="female" value="female" autocomplete="off">
+                        <label class="btn btn-primary" for="female">Female</label>
+                    </div>
                     <button type="submit" class="btn btn-primary">Registrati</button>
                 </form>
             </div>
