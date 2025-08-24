@@ -72,9 +72,10 @@ nav ul li a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--azzurro);
     object-fit: cover;
     overflow: hidden;
+    margin-left: 10px;
 }
 .navcustom {
     display: flex;
@@ -282,9 +283,6 @@ main {
 
 
 
-
-
-
 .pg {
     width: 400px;
     height: 550px;
@@ -299,4 +297,14 @@ main {
 
 .pg img {
     width: 70%;
+}
+
+/* pagina dettaglio profilo */
+.bgdettaglio {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/public/immagini/caveprofilo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

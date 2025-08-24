@@ -72,7 +72,7 @@
 
             <div class="row justify-content-center selection">
                 @foreach ($allenatori as $trainer)
-                    <div class="col-12 col-md-4 pg resizer">
+                    <div class="col-12 col-md-4 pg resizer bg-danger">
                         <img src="{{ $trainer['img'] }}" alt="">
                     </div>
                     <div class="col-12 col-md-8 text-center resizer">

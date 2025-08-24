@@ -1,4 +1,7 @@
 <x-layout>
-    <h1>Profilo di {{ $user->name }}</h1>
-    <p>Email: {{ $user->email }}</p>
+    <div class="bgdettaglio">
+        <div>
+            
+        </div>
+    </div>
 </x-layout>
