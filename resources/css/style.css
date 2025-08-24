@@ -64,6 +64,7 @@ nav ul li a {
 }
 #text-box {
     min-height: 22vh;
+    min-width: 45vw;
 }
 
 /* navbar */
@@ -73,6 +74,7 @@ nav ul li a {
     border-radius: 50%;
     background-color: white;
     object-fit: cover;
+    overflow: hidden;
 }
 .navcustom {
     display: flex;
@@ -85,6 +87,10 @@ nav ul li a {
     border-top: .4em solid;
     border-right: .4em solid transparent;
     border-left: .4em solid transparent;
+}
+.immagineprofilopers {
+    max-width: 40px;
+    max-height: 40px;
 }
 
 

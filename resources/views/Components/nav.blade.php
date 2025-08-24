@@ -22,9 +22,9 @@
                 @else
                     <li class="nav-item dropdown">
                         <a class="nav-link d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="me-2">Ciao, {{ Auth::user()->name }}</span>
+                            <span class="me-2">{{ Auth::user()->name }}</span>
                             <div class="profile-pic">
-                                <img src="/immagini/default-avatar.png">
+                                <img class="immagineprofilopers" src="/immagini/007Squirtle.webp">
                             </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
