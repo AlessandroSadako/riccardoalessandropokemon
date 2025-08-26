@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-} 
+}
 
 :root {
     --nero: #000000;
@@ -62,6 +62,7 @@ nav ul li a {
 .dropdown-item {
     color: var(--nero) !important;
 }
+
 #text-box {
     min-height: 22vh;
     min-width: 45vw;
@@ -77,10 +78,12 @@ nav ul li a {
     overflow: hidden;
     margin-left: 10px;
 }
+
 .navcustom {
     display: flex;
     justify-content: end !important;
 }
+
 .caret::after {
     content: "";
     display: inline-block;
@@ -89,6 +92,7 @@ nav ul li a {
     border-right: .4em solid transparent;
     border-left: .4em solid transparent;
 }
+
 .immagineprofilopers {
     max-width: 40px;
     max-height: 40px;
